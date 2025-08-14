@@ -1,0 +1,145 @@
+:root {
+  --color-principal: #0094DC;
+  --color-secundario: #055B8D;
+  --color-opcional:#EABE7A;
+  --color-opcional2:#BDC249;
+}
+
+
+
+
+
+.navbar{
+
+  background-color: #055B8D;
+}
+
+.navbar a{
+
+  font-size: 1.3rem;
+
+}
+
+.dropdown-menu{
+
+  background-color: #055B8D;
+}
+
+
+
+.portada{
+  position: relative;
+  background: url(../img/portada.jpg) center ;
+  background-size:cover ;
+  height: 400px;
+  
+}
+
+.portada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 172, 172, 0.5); /* Color y opacidad del overlay (0.5 = 50% de opacidad) */
+  /* Puedes usar un color sólido, pero si quieres la opacidad sobre la imagen, el rgba es la mejor opción. */
+}
+
+.portada .contenido {
+  position: relative; /* Eleva el contenido por encima del pseudo-elemento */
+  z-index: 1; /* Asegura que el contenido esté en la capa superior */
+  color: white; /* Para que el texto sea legible */
+  text-align: center;
+  padding: 20px;
+}
+
+h1{
+
+color: black;
+
+text-shadow: 2px 2px 5px rgb(218, 212, 212);
+
+  
+}
+
+
+
+.con_card{
+
+  box-shadow: 10px 10px #0094DC ;
+  border: solid 3px rgb(218, 200, 200);
+}
+
+h4{
+  color:#055B8D ;
+}
+
+body {
+  padding-top: 56px;
+  background-image: url("../img/paraBody.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+
+
+
+  
+}
+
+.btn{
+
+ background-color:#055B8D;
+ color: #d8db6a;
+}
+
+.actividades{
+  color:#d8db6a ;
+}
+
+
+
+/* Efecto al pasar el mouse por la tarjeta */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto en la imagen dentro de la tarjeta */
+.card img {
+    transition: filter 0.3s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.85);
+}
+
+
+
+
+.cita-belgrano {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.8rem 2rem;
+    background: linear-gradient(to bottom,#055B8D ,#ebebe6);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  }
+
+  .cita-belgrano blockquote {
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .cita-belgrano .autor {
+    margin: .5rem 0 0;
+    font-size: 0.95rem;
+    color:#055B8D;
+    font-weight: 500;
+  }
